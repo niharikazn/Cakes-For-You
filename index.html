@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKES FOR YOU</title>
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="adv-banner.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+      .js-cd-add-to-cart{
+        background-color: brown;
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="logo.jpg" height="45%", width="70%">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#" >HOME</a>
+          <a href="#servicess" >OUR CAKES</a>
+          <a href="#aboutt">ABOUT</a>
+          <a href="#galleryy">GALLERY</a>
+          <a href="#CONTACTT">CONTACT</a>
+          <a href="#myy">CHECK OUT</a>
+        </div>
+      </div>
+      <section id="home">
+        <a NAME="homee"></a>
+           <p> GET Yummy CAKES <br> In YOUR City</p>
+           <button class="btn"><a href="#servicess">Check Now</a> </button>
+      </section>
+      <section class="services-container">
+        <a NAME="servicess"></a>
+        <h1 class="h-primary center">OUR CAKES</h1>
+        <div id="services">
+          <div class="box">
+            <img src="1.jpg " alt="" height="150px" width="250px">
+            <h2 class="h-secondary center">SPECIAL CAKE</h2>
+            <p class="center" class="bold">PRICE: 500 Rs</p>
+            <p class="center">FLAVORS: PINAPLE , CHOCLATE , &nbsp; &nbsp;  STRAWBERRY , VANNILA<br><br>SIXES: HALF,ONE,TWO,THREE<br><br></p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-name="SPECIAL CAKE" data-image="1.jpg" data-price="500">Add To Cart</a>
+          </div>
+          <div class="box">
+            <img src="2.jpg" alt="" height="150px" width="250px">
+            <h2 class="h-secondary center">CUP CAKE</h2>
+            <p class="center" class="bold">PRICE: 350 Rs</p>
+            <p class="center">FLAVORS: PINAPLE , CHOCLATE , &nbsp; &nbsp;  STRAWBERRY , VANNILA<br><br>SIXES: HALF,ONE,TWO,THREE<br><br></p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-name="CUP CAKE" data-image="2.jpg" data-price="350">Add To Cart</a>
+          </div>
+          <div class="box">
+            <img src="4.jpg" alt="" height="150px" width="250px">
+            <h2 class="h-secondary center">PHOTO CAKE</h2>
+            <p class="center" class="bold">PRICE: 600 Rs</p>
+            <p class="center">FLAVORS: PINAPLE , CHOCLATE , &nbsp; &nbsp;  STRAWBERRY , VANNILA<br><br>SIXES: HALF,ONE,TWO,THREE<br><br></p>
+            <a href="#2" class="cd-add-to-cart js-cd-add-to-cart" data-name="PHOTO CAKE" data-image="4.jpg" data-price="600" >Add To Cart</a>
+          </div>
+          <div class="box">
+            <img src="18.jpg " alt="" height="150px" width="250px">
+            <h2 class="h-secondary center">WEDDING CAKE</h2>
+            <p class="center" class="bold">PRICE: 300 Rs</p>
+            <p class="center">FLAVORS: PINAPLE , CHOCLATE , &nbsp; &nbsp;  STRAWBERRY , VANNILA<br><br>SIXES: HALF,ONE,TWO,THREE<br><br></p>
+            <a href="#1" class="cd-add-to-cart js-cd-add-to-cart" data-name="WEDDING CAKE" data-image="18.jpg" data-price="300">Add To Cart</a>
+          </div>
+          <div class="box">
+            <img src="19.jpg" alt="" height="150px" width="250px">
+            <h2 class="h-secondary center">BIRTHDAY CAKE</h2>
+            <p class="center" class="bold">PRICE: 400 Rs</p>
+            <p class="center">FLAVORS: PINAPLE , CHOCLATE , &nbsp; &nbsp;  STRAWBERRY , VANNILA<br><br>SIXES: HALF,ONE,TWO,THREE<br><br></p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-name="BIRTHDAY CAKE" data-image="19.jpg" data-price="400">Add To Cart</a>
+          </div>
+          <div class="box">
+            <img src="20.jpg" alt="" height="150px" width="250px">
+            <h2 class="h-secondary center"> CUSTOMIZED CAKE</h2>
+            <p class="center" class="bold">PRICE: 800 Rs</p>
+            <p class="center">FLAVORS: PINAPLE , CHOCLATE , &nbsp; &nbsp;  STRAWBERRY , VANNILA<br><br>SIXES: HALF,ONE,TWO,THREE<br><br></p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-name="CUSTOMIZED CAKE" data-image="20.jpg"data-price="800">Add To Cart</a>
+          </div>
+        </div>
+        <div class="cd-cart cd-cart--empty js-cd-cart">
+          <a href="#0" class="cd-cart__trigger text-replace">
+          Cart
+          <ul class="cd-cart__count"> 
+          <li>0</li>
+          <li>0</li>
+          </ul> 
+          </a>
+          <div class="cd-cart__content">
+          <div class="cd-cart__layout">
+          <header class="cd-cart__header">
+          <h2>Cart</h2>
+          <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+          </header>
+          <div class="cd-cart__body">
+          <ul>
+          </ul>
+          </div>
+          <footer class="cd-cart__footer">
+          <a href="#myy" class="cd-cart__checkout">
+          <em>Checkout - $<span>0</span>
+          <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12" /><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 " /></g>
+          </svg>
+          </em>
+          </a>
+          </footer>
+          </div>
+          </div> 
+          </div> 
+          <script src="util.js"></script> 
+          <script src="main.js"></script>
+          
+      </section>
+      <section id="about-section">
+        <a NAME="aboutt"></a>
+        <h1 class="h-primary center">WE ARE..</h1>
+        <div class="aboutsection">
+        <div class="box">
+          <img src="me.jpg" height="200px" width="200px">
+          <p class="center name">NIHARIKA JAIN</p>
+        </div>
+        <div class="atext">
+          <p class="center abouttext">
+            The Cake For You Shop was founded by a team of passionate and dedicated bakers who are committed in baking the most delicious cakes and pastries around. Using only the freshest ingredients we can find, you can be sure that you are served the best quality cake you can ever have.We have evolved to become one of a premium distributor and wholesaler for cakes and pastries to some well known resturants, cafes, supermart, hotels and bakery.<br>Our online store is a leading online shop in Singapore providing cakes and gifts deliveries within Singapore. We provide competitive prices, good after sales services and on-time delivery.<br>The Cake Shop provides same day delivery service seven days a week, including Sunday, within Singapore to provide a high level of customer service.<br>Bon Appetite!<br>The Cake Shop Team <br> <br>
+          </p>
+        </div>
+      </div>
+      </section>
+      <section id="gallery-section">
+        <a NAME="galleryy"></a>
+        <h1 class="h-primary center">GALLERY</h1>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="1.jpg" width="800px", height="25%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="15.jpg"  width="800px", height="520px">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="10.jpg"  width="800px", height="520px">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+      </section>
+      <section id="contact-section">
+        <a NAME="CONTACTT"></a>
+        
+        <h1 class="h-primary center">CONTACT US</h1>
+       <div class="blocksc">
+        <div class="contactsection">
+          <div class="boxes">
+          <img src="https://img.icons8.com/wired/64/000000/address.png"/>
+          <p class=textss>&nbsp;&nbsp;&nbsp;BIHAINAGAR, AJMER</p>
+        </div>
+        <div class="boxes">
+          <img src="https://img.icons8.com/wired/50/000000/phone.png"/>
+          <p class=textss>&nbsp;&nbsp;&nbsp;&nbsp;9999999999</p>
+        </div>
+        <div class="boxes">
+          <img src="https://img.icons8.com/wired/64/000000/new-message.png"/>
+          <p class=textss>&nbsp;&nbsp;&nbsp;xyz@gmail.com</p>
+        </div>
+      </div>
+      <div class="forrm">
+      <h3>CONTACT FORM</h3>
+<div class="con">
+  <form>
+    <label for="name">Name</label><br/>
+    <input type="text" id="name" name="name" placeholder="Your name.."/><br/>
+    <label for="phone number">Phone Number</label><br/>
+    <input type="text" id="phone number" name="phone number" placeholder="Your Phone Number.."><br/>
+    <label for="Email">Email</label><br/>
+    <input type="text" id="Email" name="Email" placeholder="Your Email.."><br/>
+    <label for="subject">Message</label><br/>
+    <textarea id="subject" name="subject" placeholder="Write Your Message.." style="height:200px"></textarea><br/>
+    <input type="submit" value="Submit"><br/>
+  </form>
+</div>
+</div>
+</section>
+<a NAME="myy"></a>
+<section id="my">  
+  <h1 class="heading">SEE YOU SOON..</h1>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form >
+        
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" >
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" >
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" >
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" >
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                  <label for="zip">PIN CODE</label>
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+              <img src="cc.jpg">
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" >
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv"> 
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <script> 
+              function printPopUp() { 
+                  alert("PAYEMENT SUCCESSFUL PLEASE PRESS OK TO PRINT RECIEPT") 
+                  window.print(); 
+              } 
+          </script> 
+          <input type="submit" onclick="printPopUp()" value="Continue to checkout" class="btn">
+        </form>
+        
+      </div>
+    </div>
+  </section>
+      </section>
+      <footer class="end">
+        <p class="center" >NIHARIKA JAIN @COPYRIGHT</p>
+      </footer>
+     
+</body>
+</html>

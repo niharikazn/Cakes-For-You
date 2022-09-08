@@ -1,0 +1,657 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  .nav {
+    height: 69px;
+    width: 100%;
+    background-color:rgb(177 40 71);
+    top:0;
+    position: fixed;
+    z-index: 6;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+  }
+  .nav > .nav-header > .nav-title >img{
+    border-radius: 150px;
+    border: 10px solid rgb(177 40 71);
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    position: sticky;
+    display: inline;
+    float: right;
+    font-size: 24px;
+    font-family:cursive;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 16px 20px 20px 20px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:1150px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(12, 11, 11, 0.3);
+
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color:rgb(14, 13, 13);
+      opacity: 0.7;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  #home::before{
+    content: " ";
+    position: absolute;
+    background-image: url("6.jpg");
+    top: 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+  }
+  #home p{
+    font-size: 34px;
+    display: block;
+    margin:23% 23% 2% 23%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    background-color: black;
+    opacity: .7;
+    width:60%;
+    height: 33%;
+  }
+  @media (max-width:700px){
+      #home p{
+        font-size: 150%;
+    margin: 36% 23% 5% 23%;
+    width: 70%;
+    height: 40%;
+  }  
+  #home .btn{
+    padding: 1%;
+    font-size: 20px;
+    width: 40%;
+    height: 10%;
+  }
+  #services .box img{
+    height: 95%;
+    width: 85%;
+  }
+
+  #about-section .atext p{font-size:15px;
+      width: 12%;
+      height: 12%;
+      display: block;
+      margin: auto;
+    }
+    #about-section .box{
+      height: 13%;
+      width: 12%;
+    }
+   
+    .name{
+      font-size: 15px;
+      padding: 2px 1px;
+    }
+    .aboutsection {
+      display: flex;
+      align-items: center;
+      margin: 1% 2% 1% 2%;
+  }
+  #services{
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  #services p{
+    font-size: 12%;
+  }
+  .h-secondary{
+    font-size:12%;
+  }
+  #services .box{
+    display: flex;
+    width: 100%;
+  }
+}
+  #services{
+    display: flex;
+    align-items: center;
+    margin: 3% 7% 3% 7%;
+  }
+  .aboutsection{
+    display: flex;
+    align-items: center;
+    margin: 3% 7% 3% 7%;
+  }
+  #services .box{
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    margin:1% 3%;
+    border-radius: 23px;
+    background-color: rgb(245, 231, 231);
+    width: 25%;
+  height:40%;
+  }
+  .bold{
+    font-weight:bolder;
+    font-size: 15px;
+  }
+  
+  #about-section .box{
+    margin: 3px 6px;
+    border-radius: 23px;
+    width: 600px;
+  height: 500px;}
+  #about-section .atext p{
+    margin: 3px 6px;
+    border-radius: 23px;
+    width: 600px;
+  height: 450px;
+  font-size: 19px;
+}
+  #about-section .box img{
+    height: 350px;
+    width:250px;
+    padding: 15px 3px;
+    margin: auto;
+    display: block;
+      }
+      #about-section::before{
+        
+        content: "";
+        position: absolute;
+        background: url("7.jpg") no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size:cover;
+        display: flexbox;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    
+      }
+
+  #services{
+display:flex;
+flex-wrap: wrap;
+  }
+  #services .box img{
+padding: 15px 3px;
+margin: auto;
+display: block;
+border-radius: 45%;
+  }
+  .services-container{
+    margin-top: 13%;
+  } 
+  .services-container::before{
+    content: "";
+    position: absolute;
+    background: url("abb.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size:cover;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+
+  }
+      .services-container p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+  .btn{
+    padding: 1% 1%;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: whitesmoke;
+    margin:0% 3% 0% 43%;
+    font-size: 150%;
+    border-radius: 20%;
+    cursor: pointer;
+  }
+  #home .btn{
+    font-size: 50%;
+  }
+  .center{
+    text-align: center;
+  }
+  .abouttext{
+    padding: 10px;
+    font-size: larger;
+    border-top: 5px solid palevioletred;
+    border-left: 5px solid lightskyblue;
+    border-right: 5px solid goldenrod;
+    border-bottom: 5px solid lightseagreen;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .h-primary{
+    font-size:250%;
+    font-family: cursive;
+    color: brown;
+    margin-block-start: 5px;
+    margin-block-end:5px;
+    text-decoration: underline;
+  }
+  .h-secondary{
+    font-family: cursive;
+    margin-block-start: 0;
+    color: brown;
+    text-align: center;
+    font-size: 100%;
+    }
+    .justify{
+      text-align: justify
+    }
+    .name{
+    background-color: brown;
+    font-size: 32px;
+    color: white; 
+    padding: 15px 6px;
+    }
+    .mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  margin-top: 2%
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+ 
+}
+#gallery-section{
+  margin-top: 2%;
+}
+.h-primary{
+  padding-top: 7%;
+}
+#gallery-section .h-primary{
+  color: brown;
+}
+#home .btn{
+  font-size: 200%;
+  color: whitesmoke;
+}
+#home .btn a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+#gallery-section::before{
+  content: "";
+  position: absolute;
+  background: url("abb.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size:cover;
+  display: flexbox;
+  height: 120%;
+  width: 100%;
+  opacity: 1.5;
+  z-index: -1;
+}
+.contactsection{
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#contact-section .boxes{
+  align-items: center;
+  display: flex;
+ margin: auto;
+ text-align: left;
+ margin-left: 20%;
+ margin-top: 2%;
+
+height:40%;
+}
+#contact-section::before{
+  content: "";
+  position: absolute;
+  background: url("26.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size:cover;
+  display: flexbox;
+  height: 120%;
+  width: 100%;
+  opacity: 1.5;
+  margin-top: 5%;
+  z-index: -1;
+
+}
+#contact-section .forrm{
+  margin-left: 70%;
+  margin-top: -20%;
+  margin-bottom: 3%;
+  
+}
+#contact-section .forrm label{
+  font-weight: bold;
+  color: brown;
+  font-size: large;
+  font-family: cursive;
+  padding: 8% 1%;
+}
+
+#contact-section .forrm h3{
+  font-weight: bolder;
+  color: brown;
+  font-size: xx-large;
+  font-family: cursive;
+}
+#contact-section .forrm input[type=text],#contact-section .forrm select,#contact-section .forrm textarea{
+  width: 80%;
+  padding: 12px;
+  border: 2px solid brown;
+  border-radius: 4px;
+margin-bottom: 12px;
+}
+#contact-section .forrm input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+#contact-section .forrm  input[type=submit] {
+  background-color:brown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  width: 80%;
+  cursor: pointer;
+}
+#contact-section .textss p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+
+}
+
+#contact-section .h-primary{
+  margin-bottom: 5%;
+}
+
+.end{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+.end p{
+  font-size: larger;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+#my .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  color: brown;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin:3% ;
+}
+
+#my .col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+#my .col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+#my .heading{
+  font-size:xx-large;
+  font-weight: bold;
+  color: brown;
+  text-align: center;
+}
+#my .col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+#my .col-25,
+#my .col-50,
+#my .col-75 {
+  padding: 0% 7%;
+}
+
+#my .container {
+  background-color: #f7d7d7;
+  border: 4px solid brown;
+  border-radius: 3px;
+  margin:1% 5%
+}
+
+#my input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 2px solid brown;
+  border-radius: 3px;
+}
+
+#my label {
+  margin-bottom: 10px;
+  display: block;
+  color: brown;
+}
+
+#my .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#my .btn {
+  background-color: brown;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#my .btn:hover {
+  background-color: #080808;
+  
+}
+
+#my a {
+  color: #2977b8;
+}
+
+#my hr {
+  border: 1px solid lightgrey;
+}
+
+#my span.price {
+  float: right;
+  color: grey;
+}
+@media (max-width: 800px) {
+  #my .row {
+    flex-direction: column-reverse;
+  }
+  #my.col-25 {
+    margin-bottom: 20px;
+  }
+}
+#my .heading{
+  margin-top: 10%;
+  font-size:300%;
+  padding: 12px;
+  font-weight: bold;
+  color: brown;
+  text-align: center;
+}
+#my::before{
+  content: "";
+  position: absolute;
+  background: url("abb.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size:cover;
+  display: flexbox;
+  height: 140%;
+  width: 100%;
+  opacity: 1.5;
+  z-index: -1;
+
+}
